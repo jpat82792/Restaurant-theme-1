@@ -1,0 +1,35 @@
+/*Universal styles, used on every page*/
+/*Add muli font*/
+@font-face{
+  font-family: "Muli";
+  font-weight: 300;
+  src:url("../fonts/Muli/Muli-Light.ttf")format("truetype");
+}
+@font-face{
+  font-family: "Muli";
+  font-weight: 400;
+  src:url("../fonts/Muli/Muli-Regular.ttf")format("truetype");
+}
+@font-face{
+  font-family: "Muli";
+  font-weight: 700;
+  src:url("../fonts/Muli/Muli-Bold.ttf")format("truetype");
+}
+@font-face{
+  font-family: "Muli";
+  font-weight: 300;
+  font-style: italic;
+  src:url("../fonts/Muli/Muli-LightItalic.ttf")format("truetype");
+}
+@font-face{
+  font-family: "Muli";
+  font-weight: 400;
+  font-style: italic;
+  src:url("../fonts/Muli/Muli-RegularItalic.ttf")format("truetype");
+}
+@font-face{
+  font-family: "Muli";
+  font-weight: 700;
+  font-style: italic;
+  src:url("../fonts/Muli/Muli-BoldItalic.ttf")format("truetype");
+}
