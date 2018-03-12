@@ -1,0 +1,71 @@
+/*menu-component*/
+@import 'universal.less';
+.menu-section-items{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+  justify-content:space-between;
+}
+
+.menu-section-label{
+  font-size: 45px;
+  font-family: spectral;
+}
+.menu-featured-image{
+  width:100%;
+}
+
+.more-menu-items{
+  .cta-link;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  font-size: 20px;
+  font-family: muli;
+  font-weight: 700;
+}
+
+.menu-item-name{
+  font-family: spectral;
+  font-size: 25px;
+}
+
+.menu-item-description{
+    font-family: muli;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.more-menu-items-container{
+  width:100%;
+  text-align:center; 
+}
+.price-tag{
+    float: right;
+    font-size: 16px;
+    font-family: muli;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+@media (min-width:320px){
+  .menu-item{
+    width:100%;
+  }  
+}
+@media (min-width:480px){
+  .menu-item{
+    width:100%;
+  }  
+}
+@media (min-width:768px){
+  .menu-item{
+    width:226px;
+  }  
+}
+@media (min-width:1024px){
+  .menu-item{
+    width:311px;
+  }
+}

@@ -1,36 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet/css" href="stylesheets/font-awesome.css" type="text/css" />
 
     <link rel="stylesheet/less" href="stylesheets/universal.less" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/navbar.less" type="text/css" />
-    <link rel="stylesheet/less" href="stylesheets/news-component.less" type="text/css"/>
+    <link rel="stylesheet/less" href="stylesheets/menu-component.less" type="text/css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
     <script src="javascripts/html5shiv-printshiv.js"></script>
-    
   </head>
   <body>
-  
     <%- include components/navbar.html %>
     <div class="main-container">
-      <h1 class="banner-text">Oliver's Table</h1>
-      <img class="banner-image" src="images/cook-food-kitchen-eat-54455.png"/>
+      <h1 class="banner-text">Menu</h1>
+      <img class="banner-image" src="images/blue-wood-table-top-crop.png"/>
+
     </div>
     <div class="main-content-container">
-      <section class="news-container">
-        <h1 class="container-banner">News</h1>
-        <%- include components/news-content.html %>
-      </section>
-      <div class="see-more-link-container">
-        <a class="see-more-link">
-          See more
-        </a>
-      </div>
+      <%- include components/menu-content.html%>
     </div>
-
-    <!--<%- include components/footer.html %>-->
-    <script src="javascripts/navbarController.js"></script>
   </body>
 </html>
