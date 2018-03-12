@@ -27,6 +27,11 @@ html{
   height:100%;
 }
 
+h1, h2, h3,h4, h5, h6{
+  margin:0px;
+  padding:0px;
+}
+
 @font-face{
   font-family: "Muli";
   font-weight: 300;
@@ -113,13 +118,29 @@ html{
 }
 
 .end-of-section-line{
-  height:2px;
+  height:1px;
   background-color:@color-black-5;
+  width:100%;
+  float:left;
+  margin-top:30px;
+
 }
 
 .main-content-container{
   padding-left:30px;
   padding-right:30px;
+}
+
+.cta-link{
+  border:1px solid @color-black-5;
+  border-radius:2px;
+  color:@color-black-1;
+  border-radius: 6px;
+  color: #020202;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media (min-width:320px){
@@ -128,26 +149,25 @@ html{
     float:none;
     margin:auto;
   }
-.end-of-section-line{width:320px;}
+
 }
 @media (min-width:480px){
   .main-content-container{
     width:480px;
   }
-.end-of-section-line{width:480px;}
+
 }
 @media (min-width:768px){
   .main-content-container{
     width:768px;
   }
-.end-of-section-line{width:768px;}
+
 }
 @media (min-width:1024px){
   .main-content-container{
     width:1024px;
     
   }
-.end-of-section-line{width:100%;}
 }
 
 
