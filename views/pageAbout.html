@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet/css" href="stylesheets/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/universal.less" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/navbar.less" type="text/css" />
+    <link rel="stylesheet/less" href="stylesheets/footer.less" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/about-component.less" type="type/css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
     <script src="javascripts/html5shiv-printshiv.js"></script>
@@ -12,12 +13,13 @@
   <body>
     <%- include components/navbar.html %>
     <div class="main-container">
-      <h1 class="banner-text about-banner-text">About</h1>
+      <h1 class="banner-text">About</h1>
       <img class="banner-image" src="images/about.png"/>
     </div>
-    <div class="main-content-container">
+    <div class="main-content-container last-element-in-body">
       <h1 class="container-banner">About Oliver's Table</h1>
       <%- include components/about-content.html %>
     </div>
+    <%- include components/footer.html %>
   </body>
 </html>

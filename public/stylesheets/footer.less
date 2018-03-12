@@ -1,0 +1,77 @@
+/*footer styles*/
+
+@import 'universal.less';
+
+footer{
+  background-color:@color-black-6;
+  float: left;
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+  height:150px;
+}
+
+.social-icons{
+  float:left;
+  top:55px;
+  position:relative;
+}
+
+.footer-content{
+  height:100%;
+}
+
+.footer-site-title{
+  float:right;
+    top: 50px;
+    position: relative;
+}
+
+.social-icon{
+  font-size:30px;
+  margin-right:30px;
+}
+
+@media (min-width:320px){
+  .social-icons{
+    float:left;
+    top:72px;
+    position:relative;
+    width:100%;
+    text-align:center;
+  }
+  .footer-site-title{
+    float:right;
+      top: 00px;
+      position: relative;
+    width:100%;
+    text-align:center;
+  }
+  .social-icon{
+    font-size: 30px;
+    margin-right: 30px;
+    left: 15px;
+    position: relative;
+  }
+}
+
+@media (min-width:480px){
+  .social-icon{
+    font-size: 30px;
+    margin-right: 30px;
+    left: 0px;
+    position: relative;
+  }
+.social-icons{
+  float:left;
+  top:55px;
+  text-align:left;
+  position:relative;
+}
+.footer-site-title{
+  float:right;
+  text-align:right;
+    top: 22px;
+    position: relative;
+}
+}
