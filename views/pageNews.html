@@ -2,12 +2,21 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet/css" href="stylesheets/font-awesome.css" type="text/css" />
+
+    <link rel="stylesheet/less" href="stylesheets/universal.less" type="text/css" />
+    <link rel="stylesheet/less" href="stylesheets/navbar.less" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
     <script src="javascripts/html5shiv-printshiv.js"></script>
-    <link rel="stylesheet" href="stylesheets/universal.css">
     
   </head>
   <body>
-  <%- include components/navbar.html %>
-  <%- include components/news-content.html %>
+  
+    <%- include components/navbar.html %>
+    <div class="main-content-container">
+      <%- include components/news-content.html %>
+    </div>
+    <%- include components/footer.html %>
+    <script src="javascripts/navbarController.js"></script>
   </body>
 </html>

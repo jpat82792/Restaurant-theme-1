@@ -1,0 +1,146 @@
+/*Navbar styles*/
+@import "universal";
+.navbar{
+  background-color:@color-black-6;
+  width: 100%;
+  float: left;
+  margin:0px;
+  height:90px;
+}
+.site-title{
+  font-family:Spectral;
+  font-weight: 400;
+  color:@color-black-1;
+  text-decoration:none;
+  float:left;
+  height:100%;
+  font-size:30px;
+  line-height:2.8;
+}
+
+.navbar-content-container{
+
+}
+
+.navbar-items{
+  padding:0px;
+  float:right;
+  margin:0px;
+  height:100%;
+  font-size:30px;
+  text-transform:capitalize;
+  line-height:2.65;
+}
+
+.navbar-item{
+  font-family:Muli;
+  list-style-type:none;
+  font-weight:400;
+  display:inline-block;
+  font-size:18px;
+}
+
+.navbar-link{
+  
+}
+
+.hamburger-bar{
+  background-color:@color-black-1;
+  width:22px;
+  height:2px;
+  float:right;
+  display:block;
+  margin-top:5px;
+}
+
+.navbar-button{
+  font-family:muli;
+  font-weight:400;
+  font-size:18px;
+  text-transform:capitalize;
+  .clear-button;
+}
+
+.active-navbar-item{
+  text-decoration:underline;
+}
+
+.mobile-navigation{
+  float:right;
+  width:22px;
+  position:relative;
+  top:30px; 
+}
+
+.mobile-navigation-modal{
+  display:none;
+  background-color:#f1f1f1;
+  position:absolute;
+  height:100%;
+  width:100%;
+  position:absolute;
+  background-color:@color-black-6;
+  overflow-x:hidden;
+}
+
+.active-mobile-navigation-modal{
+  display:block
+}
+
+.mobile-navigation-modal-title{
+  .site-title;
+  float:none;
+  margin:auto;
+  height:initial;
+  text-align:center;
+}
+
+.mobile-navigation-modal-link{
+  text-align:center;
+  display:block;
+  font-size:25px;
+  font-family:Muli;
+  font-weight:300;
+  text-transform:capitalize;
+}
+
+.navigation-option-spacing{
+  margin-top:15px;
+}
+
+.mobile-navigation-modal-button{
+  text-align:center;
+  display:block;
+  font-size:25px;
+  font-family:Muli;
+  font-weight:300;
+  width:100%;
+  text-transform:capitalize;
+}
+
+.modal-navbar{
+    
+}
+
+@media (min-width:320px){
+  .mobile-navigation{
+    display:block;
+  }
+  .navbar-items{
+    display:none;
+  }
+}
+@media (min-width:480px){
+
+}
+@media (min-width:768px){
+  .mobile-navigation{
+    display:none;
+  }
+  .navbar-items{
+    display:block;
+  }
+}
+@media (min-width:1024px){
+
+}

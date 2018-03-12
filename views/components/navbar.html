@@ -1,30 +1,38 @@
-<nav>
-  <a href="site-title">Oliver's Table</a>
-  <ul>
-    <li>
+<%- include navbar-modal.html %>
+<nav class="navbar">
+  <div class="main-content-container clear navbar-content-container">
+  <a href="site-title" class="site-title">Oliver's Table</a>
+  <ul class="navbar-items">
+    <li class="navbar-item">
       <a>
         news
       </a>
     </li>
-    <li>
+    <li class="navbar-item">
       <a>
         menu
       </a>
     </li>
-    <li>
+    <li class="navbar-item">
       <a>
         events
       </a>
     </li>
-    <li>
-      <button>
+    <li class="navbar-item">
+      <button class="navbar-button">
         contact
       </button>
     </li>
-    <li>
+    <li class="navbar-item">
       <a>
         about
       </a>
     </li>
   </ul>
+  <button class="clear-button mobile-navigation" id="mobile-navigation-button" data-state="closed">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
+  </div>
 </nav>
