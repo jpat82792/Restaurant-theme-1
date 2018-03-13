@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet/css" href="stylesheets/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" />
 
     <link rel="stylesheet/less" href="stylesheets/universal.less" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/navbar.less" type="text/css" />
@@ -18,11 +18,14 @@
       <img class="banner-image" src="images/blue-wood-table-top-crop.png"/>
 
     </div>
-    <div class="main-content-container">
+    <div class="main-content-container main-content-container-with-margin">
       <h1 class="container-banner">Menu</h1>
       <%- include components/menu-content.html%>
     </div>
+      <div style="height: 60px; position: relative; margin-top: 60px;">
+      </div>
         <%- include components/footer.html %>
+
     <script src="javascripts/navbarController.js"></script>
   </body>
 </html>
