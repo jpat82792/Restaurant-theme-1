@@ -35,6 +35,12 @@
   cursor:pointer;
 }
 
+.white-background{
+  background:white;
+}
+
+
+
 .contact-modal-button-active{
   background-color:#020202;
 }
@@ -135,6 +141,9 @@
   font-family: spectral;
 }
 
+
+
+
 @keyframes blink {
     /**
      * At the start of the animation the dot
@@ -198,4 +207,23 @@
      * would animate at the same time
      */
     animation-delay: .4s;
+}
+
+@media (min-width:320px){
+  .contact-modal-margins-padding{
+      padding-bottom: 30px;
+      padding-top: 30px;
+      margin-top: 60px;
+  }
+  .active-contact-modal{
+    top:0px;
+  }
+}
+@media(min-width:768px){
+  .active-contact-modal{
+    top:90px;
+  }
+  .contact-modal-margins-padding{
+      margin-top: 0px;
+  }
 }
