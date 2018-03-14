@@ -7,10 +7,12 @@
     <link rel="stylesheet/less" href="stylesheets/navbar.less" type="text/css" />
     <link rel="stylesheet/less" href="stylesheets/footer.less" type="text/css"/>
     <link rel="stylesheet/less" href="stylesheets/event-component.less" type="text/css"/>
+    <link rel="stylesheet/less" href="stylesheets/contact-component.less" type="text/css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
     <script src="javascripts/html5shiv-printshiv.js"></script>
   </head>
   <body>
+    <%- include components/contact-modal.html %>
     <%- include components/navbar.html %>
     <div class="main-container">
       <h1 class="banner-text">Events</h1>
@@ -27,5 +29,7 @@
     </div>  
     <%- include components/footer.html %>
     <script src="javascripts/navbarController.js"></script>  
+    <script src="javascripts/contactModalController.js"></script>
+    <script src="javascripts/activateNavbarElement.js"></script>
   </body>
 </html>
