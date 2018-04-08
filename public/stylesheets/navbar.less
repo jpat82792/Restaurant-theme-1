@@ -10,8 +10,7 @@
   z-index:30;
 }
 .site-title{
-  font-family:Spectral;
-  font-weight: 400;
+  .font-spectral-400;
   color:@color-black-1;
   text-decoration:none;
   float:left;
@@ -19,11 +18,6 @@
   font-size:30px;
   line-height:2.8;
 }
-
-.navbar-content-container{
-
-}
-
 
 .navbar-items{
   padding:0px;
@@ -36,9 +30,8 @@
 }
 
 .navbar-item{
-  font-family:Muli;
+  .font-muli-400;
   list-style-type:none;
-  font-weight:400;
   display:inline-block;
   font-size:18px;
 }
@@ -57,11 +50,15 @@
 }
 
 .navbar-button{
-  font-family:muli;
-  font-weight:400;
+  .font-muli-400;
   font-size:18px;
   text-transform:capitalize;
   .clear-button;
+  cursor:pointer;
+}
+
+.navbar-button:hover{
+  text-decoration:underline;
 }
 
 .active-navbar-item{
@@ -105,8 +102,7 @@
   text-align:center;
   display:block;
   font-size:25px;
-  font-family:Muli;
-  font-weight:300;
+  .font-muli-300;
   text-transform:capitalize;
 }
 
@@ -118,8 +114,7 @@
   text-align:center;
   display:block;
   font-size:25px;
-  font-family:Muli;
-  font-weight:300;
+  .font-muli-300;
   width:100%;
   text-transform:capitalize;
 }

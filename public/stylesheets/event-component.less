@@ -3,14 +3,23 @@
 @import "universal.less";
 
 .read-more-link{
+  .font-muli-700;
   float:right;
-  font-family:muli;
   font-size:20px;
-  font-weight:700;
   text-decoration:none;
   color:@color-black-1;
   margin-top:15px;
   .cta-link;
+  .prevent-highlight-text;
+  cursor:pointer;
+}
+
+.read-more-link:active{
+  background-color:#f1f1f1;
+}
+
+.read-more-link:hover{
+  text-decoration:none;
 }
 
 .event-section{
@@ -23,7 +32,7 @@
 
 .time-styles{
   font-size: 30px;
-  font-family: spectral;
+  .font-spectral-700;
   line-height:1;
 }
 

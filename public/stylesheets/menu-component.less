@@ -8,51 +8,75 @@
 }
 
 .menu-section-label{
+  .font-spectral-700;
   font-size: 45px;
-  font-family: spectral;
 }
 .menu-featured-image{
   width:100%;
 }
 
 .more-menu-items{
-  .cta-link;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .see-more-link;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 20px;
-  font-family: muli;
-  font-weight: 700;
+  .font-muli-700;
+}
+
+.more-menu-items:hover{
+  text-decoration:none;
+}
+
+.more-menu-items:active{
+  background-color:#f1f1f1;
 }
 
 .menu-item-name{
-  font-family: spectral;
+  .font-spectral-700;
   font-size: 25px;
+  
 }
 
 .menu-item-description{
-    font-family: muli;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
+  .font-muli-400;
+  font-size: 18px;
+  line-height: 1.2;
 }
 .more-menu-items-container{
   width:100%;
   text-align:center; 
 }
 .price-tag{
-    float: right;
     font-size: 16px;
-    font-family: muli;
+    font-family: "Muli";
     font-weight: 300;
-    margin-top: 30px;
+    position: absolute;
+    display: block;
+    vertical-align: bottom;
+    width: 100%;
+    text-align: right;
+    bottom: 0px;
 }
 
 @media (min-width:320px){
   .menu-item{
     width:100%;
   }  
+  .menu-item-name{
+    height:auto;
+  }
+  .price-tag {
+    font-size: 16px;
+      .font-muli-300;
+    display: block;
+    vertical-align: bottom;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    position:relative;
+  }
 }
 @media (min-width:480px){
   .menu-item{
@@ -62,7 +86,21 @@
 @media (min-width:768px){
   .menu-item{
     width:226px;
+    vertical-align: bottom;
+    position: relative;
+    padding-bottom: 45px;
   }  
+  .menu-item-name{
+  }
+  .price-tag{
+      font-size: 16px;
+      position: absolute;
+      margin-top:0px;
+      vertical-align: bottom;
+      width: 100%;
+      text-align: right;
+      bottom: 0px;
+  }
 }
 @media (min-width:1024px){
   .menu-item{

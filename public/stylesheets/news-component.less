@@ -2,15 +2,13 @@
 @import "universal";
 
 .news-title{
-  font-family:Spectral;
-  font-weight:400;
+  .font-spectral-400;
   font-size:45px;
   color:@color-black-1;
 }
 
 .news-excerpt{
-  font-family:muli;
-  font-weight:400;
+  .font-muli-400;
   font-size:18px;
 }
 
@@ -21,6 +19,8 @@
 }
 
 .read-more-link{
+  .prevent-highlight-text;
+  .see-more-link;
   float:right;
   font-family:muli;
   font-size:20px;
@@ -30,8 +30,16 @@
   margin-top:15px;
   .cta-link;
 }
+
+.read-more-link:hover{
+  text-decoration:none;
+}
+
+.read-more-link:active{
+  background-color:#f1f1f1;
+}
 .news-banner-text{
-  
+  .banner-text;
 }
 @media (min-width:320px){
   .news-title{

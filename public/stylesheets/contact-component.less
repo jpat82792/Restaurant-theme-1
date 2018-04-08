@@ -1,7 +1,8 @@
 /*Styles for contact modal*/
-
+@import "universal";
 .contact-header{
   font-size: 45px;
+  .font-spectral-700;
   font-family: spectral;
   margin-bottom: -10px;
   width:300px;
@@ -15,9 +16,8 @@
 }
 
 .contact-cta{
-  font-family: spectral;
   font-size: 25px;
-  font-weight: 400;
+  .font-spectral-400;
   margin-top: 15px;
   margin-bottom: 15px;
   width:300px;
@@ -27,11 +27,12 @@
   outline:none;
   background-color:transparent;
   border:none;
-  border: 1px solid #020202;
+  border: 1px solid @color-black-1;
   height:14px;
   width:14px;
   border-radius:7px;
   cursor:pointer;
+  transition:0.5s;
 }
 
 .white-background{
@@ -64,9 +65,8 @@
 .contact-modal-confirm-button{
   border:1px solid #ababab;
   border-radius:2px;
-  color:#020202;
+  color:@color-black-1;
   border-radius: 6px;
-  color: #020202;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   padding-left: 5px;
@@ -79,21 +79,34 @@
   background-color:transparent;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top:15px;
+  cursor:pointer;
 }
 
+.contact-modal-confirm-button:active{
+  background-color:#f1f1f1;
+  outline:none;
+}
+
+.contact-modal-confirm-button:visited{
+  outline:none;
+}
+.contact-modal-confirm-button:focus{
+  outline:none;
+}
 .contact-modal-input{
-  background-color:#f0f0f0;
+  background-color:white;
   font-family:muli;
   font-weight:400;
-  color:#020202;
+  color:@color-black-1;
   outline:none;
   border:none;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #ababab;
   border-radius: 3px;
-  width:300px;
   display:block;
   font-size:18px;
   margin-top:15px;
+  padding-left:5px;
 }
 .contact-modal-input:focus{
   outline:none;
@@ -134,7 +147,7 @@
     background-color: #f1f1f1;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-color: #f0f0f0;
     overflow-x: hidden;
     z-index:130;
@@ -148,71 +161,30 @@
   font-family: spectral;
 }
 
-
-
-
 @keyframes blink {
-    /**
-     * At the start of the animation the dot
-     * has an opacity of .2
-     */
     0% {
       opacity: .2;
     }
-    /**
-     * At 20% the dot is fully visible and
-     * then fades out slowly
-     */
     20% {
       opacity: 1;
     }
-    /**
-     * Until it reaches an opacity of .2 and
-     * the animation can start again
-     */
     100% {
       opacity: .2;
     }
 }
 
 .saving span {
-    /**
-     * Use the blink animation, which is defined above
-     */
     animation-name: blink;
-    /**
-     * The animation should take 1.4 seconds
-     */
     animation-duration: 1.4s;
-    /**
-     * It will repeat itself forever
-     */
     animation-iteration-count: infinite;
-    /**
-     * This makes sure that the starting style (opacity: .2)
-     * of the animation is applied before the animation starts.
-     * Otherwise we would see a short flash or would have
-     * to set the default styling of the dots to the same
-     * as the animation. Same applies for the ending styles.
-     */
     animation-fill-mode: both;
 }
 
 .saving span:nth-child(2) {
-    /**
-     * Starts the animation of the third dot
-     * with a delay of .2s, otherwise all dots
-     * would animate at the same time
-     */
     animation-delay: .2s;
 }
 
 .saving span:nth-child(3) {
-    /**
-     * Starts the animation of the third dot
-     * with a delay of .4s, otherwise all dots
-     * would animate at the same time
-     */
     animation-delay: .4s;
 }
 
@@ -225,6 +197,9 @@
   .active-contact-modal{
     top:0px;
   }
+  .contact-modal-input{
+    width:260px;
+  }
 }
 @media(min-width:768px){
   .active-contact-modal{
@@ -232,5 +207,8 @@
   }
   .contact-modal-margins-padding{
       margin-top: 0px;
+  }
+  .contact-modal-input{
+    width:300px;
   }
 }
