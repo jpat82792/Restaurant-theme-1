@@ -1,1 +1,11 @@
+bin
+
 node_modules
+
+routes
+
+app.js
+
+package.json
+
+package-lock.json
