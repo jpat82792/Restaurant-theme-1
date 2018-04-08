@@ -1,6 +1,10 @@
 # Restaurant-theme-1
-Brand Target Words: Fresh, Responsible, and Elegant
+Live preview: <a href="https://restaurant-theme-1.herokuapp.com/">Restaurant Theme 1 Preview</a>
+<br>
+See the original concept developed in photoshop: <a href="https://www.behance.net/gallery/63025113/Clean-Restaurant-Theme">Behance of Restaurant Theme 1 </a>
 
-Template designed around the above brand target words. This will soon be updated with more information on how to use this repository.
-
-Demo the site: <a href="https://restaurant-theme-1.herokuapp.com/">https://restaurant-theme-1.herokuapp.com/</a>
+<h2>Plans</h2>
+<ol>
+  <li>Add development guide / documentation</li>
+  <li>Add css transitions</li>
+</ol>
